@@ -1,0 +1,44 @@
+<!DOCTYPE make-tomatohtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Event</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <!-- system no 1 event handler(onclick) -->
+    <h1 title="home" onclick="console.log('this is h1')">DOM Speial Event</h1>
+    <button onclick="console.log(7)">Click Me</button>
+    <button onclick="console.log('you have to go')">Another Button</button>
+
+    <br>
+    <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+
+    <!-- system no 2 event handler(onclick) -->
+    <button onclick="makeRed()">Make Red</button>
+
+     <!-- system no 3 event handler(onclick) -->
+     <button id="make-blue">Make Blue</button>
+
+     <!-- system no 3.5 event handler(onclick) -->
+     <button id="make-Purple">Make Purple</button>
+
+
+     <!-- system no 4 event handler(onclick) -->
+     <button id="make-pink">Make Pink</button>
+
+
+     <!-- system no 4.5 event handler(onclick) -->
+     <button id="make-green">Make Green</button>
+
+     
+    <!-- option 5(final version) maximum time event handle er jonne use korbo -->
+    <button id="make-tomato">Make Tomato</button>
+
+
+
+    <script src="js/event.js"></script>
+</body>
+</html>

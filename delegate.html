@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+    <ul id="list-container">
+        <li class="item">Lorem, ipsum dolor.</li>
+        <li class="item">Distinctio, voluptatibus fuga.</li>
+        <li class="item">Iste, adipisci alias.</li>
+        <li class="item">Fugiat, dolore velit!</li>
+        <li class="item">Nemo, alias distinctio.</li>
+        <li class="item">Quia, nihil consequatur!</li>
+    </ul>
+    <button id="btn-add-item">Add Item</button>
+
+
+    <script>
+        // const items = document.getElementsByClassName('item');
+        // for(const item of items){
+        //     item.addEventListener('click', function(event){
+        //         //console.log(event.target);
+        //         // console.log(event.target.parentNode);
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+      document.getElementById('list-container').addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
+      })
+
+
+        document.getElementById('btn-add-item').addEventListener('click', function(){
+            // kothay add korbo
+            const listContainer = document.getElementById('list-container');
+            // ki add korbo
+            const li = document.createElement('li');
+            li.innerText = 'New item added';
+            // added class into new item
+            li.classList.add('item');
+            // append new item
+            listContainer.appendChild(li);
+        })
+
+    </script>
+</body>
+</html>

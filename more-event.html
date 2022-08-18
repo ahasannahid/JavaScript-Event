@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <h1>Explore More events</h1>
+    <button id="btn-more">Events</button>
+    <input type="text" id="text-field"><br><br>
+    <input type="text" id="text">
+
+    <script>
+        document.getElementById('text-field').addEventListener('focus', function(){
+            console.log('enent inside input filled focus');
+        })
+        document.getElementById('text-field').addEventListener('blur', function(){
+            console.log('enent inside input filled blur');
+        })
+
+        // document.getElementById('text').addEventListener('keydown', function(event){
+        //     console.log(event.target.value);
+        // })
+
+        // document.getElementById('text').addEventListener('keypress', function(event){
+        //     console.log(event.target.value);
+        // })
+        document.getElementById('text').addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        })
+
+        document.getElementById('btn-more').addEventListener('mousemove', function(){
+            console.log('event mouse move');
+        })
+
+        // document.getElementById('btn-more').addEventListener('mouseenter', function(){
+        //     console.log('event mouse enter');
+        // })
+
+        // document.getElementById('btn-more').addEventListener('click', function(){
+        //     console.log('event click');
+        // })
+    </script>
+
+</body>
+</html>
